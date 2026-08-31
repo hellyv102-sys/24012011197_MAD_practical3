@@ -256,35 +256,25 @@ Practical-3/
 
 ![Make Phone Call](Screenshot%202026-08-31%20203201.png)
 
----
 
-## 📋 Open Call Log
-
-![Call Log](Screenshot%202026-08-31%20203243.png)
-
----
 
 ## 🖼️ Open Gallery
 
-![Open Gallery](Screenshot%202026-08-31%20203312.png)
+![Open Gallery](Screenshot%202026-08-31%20203243.png)
 
 ---
 
 ## 📷 Open Camera
 
-![Open Camera](Screenshot%202026-08-31%20203407.png)
+![Open Camera](Screenshot%202026-08-31%20203312.png)
 
 ---
 
-## ⏰ Set Alarm
 
-![Set Alarm](Screenshot%202026-08-31%20203445.png)
-
----
 
 ## 🔐 Login Activity
 
-![Login Activity](Screenshot%202026-08-31%20203510.png)
+![login](Screenshot%202026-08-31%20203407.png)
 
 # ✅ Result
 
