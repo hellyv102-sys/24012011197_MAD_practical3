@@ -242,49 +242,49 @@ Practical-3/
 
 ## 🏠 Home Screen
 
-![Home Screen](Screenshot 2026-08-31 202806.png)
+![Home Screen](Screenshot%202026-08-31%20202806.png)
 
 ---
 
 ## 🌐 Open Website
 
-![Open Website](Screenshots/website.png)
+![Open Website](Screenshot%202026-08-31%20203027.png)
 
 ---
 
 ## 📞 Make Phone Call
 
-![Make Phone Call](Screenshots/call.png)
+![Make Phone Call](Screenshot%202026-08-31%20203201.png)
 
 ---
 
 ## 📋 Open Call Log
 
-![Call Log](Screenshots/calllog.png)
+![Call Log](Screenshot%202026-08-31%20203243.png)
 
 ---
 
 ## 🖼️ Open Gallery
 
-![Open Gallery](Screenshots/gallery.png)
+![Open Gallery](Screenshot%202026-08-31%20203312.png)
 
 ---
 
 ## 📷 Open Camera
 
-![Open Camera](Screenshots/camera.png)
+![Open Camera](Screenshot%202026-08-31%20203407.png)
 
 ---
 
 ## ⏰ Set Alarm
 
-![Set Alarm](Screenshots/alarm.png)
+![Set Alarm](Screenshot%202026-08-31%20203445.png)
 
 ---
 
 ## 🔐 Login Activity
 
-![Login Activity](Screenshots/login.png)
+![Login Activity](Screenshot%202026-08-31%20203510.png)
 
 # ✅ Result
 
