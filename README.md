@@ -242,7 +242,7 @@ Practical-3/
 
 ## 🏠 Home Screen
 
-![Home Screen](Screenshots/home.png)
+![Home Screen](Screenshot 2026-08-31 202806.png)
 
 ---
 
