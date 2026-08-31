@@ -1,7 +1,7 @@
 # 📱 Practical-3: Implicit & Explicit Intent in Android
 
 <p align="center">
-  <img src="Screenshots/logo.png" width="180" alt="Ganpat University Logo"/>
+  <img src="drawable/guni_pink_logo.png" width="180" alt="Ganpat University Logo"/>
 </p>
 
 <p align="center">
