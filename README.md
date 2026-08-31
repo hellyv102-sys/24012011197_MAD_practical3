@@ -238,6 +238,53 @@ Practical-3/
 | Android SDK | Intents |
 
 ---
+# 📸 Output Screenshots
+
+## 🏠 Home Screen
+
+![Home Screen](Screenshots/home.png)
+
+---
+
+## 🌐 Open Website
+
+![Open Website](Screenshots/website.png)
+
+---
+
+## 📞 Make Phone Call
+
+![Make Phone Call](Screenshots/call.png)
+
+---
+
+## 📋 Open Call Log
+
+![Call Log](Screenshots/calllog.png)
+
+---
+
+## 🖼️ Open Gallery
+
+![Open Gallery](Screenshots/gallery.png)
+
+---
+
+## 📷 Open Camera
+
+![Open Camera](Screenshots/camera.png)
+
+---
+
+## ⏰ Set Alarm
+
+![Set Alarm](Screenshots/alarm.png)
+
+---
+
+## 🔐 Login Activity
+
+![Login Activity](Screenshots/login.png)
 
 # ✅ Result
 
