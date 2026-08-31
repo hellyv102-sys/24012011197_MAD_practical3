@@ -1,12 +1,7 @@
 # 📱 Practical-3: Implicit & Explicit Intent in Android
 
 
-<p align="center">
-  <b>Mobile Application Development (MAD) - Practical 3</b><br>
-  Kotlin | Android Studio | Implicit & Explicit Intent
-</p>
 
----
 
 ## 🎯 Aim
 
