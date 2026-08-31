@@ -1,8 +1,5 @@
 # 📱 Practical-3: Implicit & Explicit Intent in Android
 
-<p align="center">
-  <img src="drawable/guni_pink_logo.png" width="180" alt="Ganpat University Logo"/>
-</p>
 
 <p align="center">
   <b>Mobile Application Development (MAD) - Practical 3</b><br>
