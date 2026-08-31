@@ -1,196 +1,252 @@
-📱 Practical-3: Implicit & Explicit Intent in Android
-Aim
+# 📱 Practical-3: Implicit & Explicit Intent in Android
 
-Create an Android application which demonstrates Implicit Intent and Explicit Intent using Kotlin in Android Studio.
+<p align="center">
+  <img src="Screenshots/logo.png" width="180" alt="Ganpat University Logo"/>
+</p>
 
-Application Demo
-🎥 Demo
+<p align="center">
+  <b>Mobile Application Development (MAD) - Practical 3</b><br>
+  Kotlin | Android Studio | Implicit & Explicit Intent
+</p>
 
-This application demonstrates different Android Intent actions through simple buttons.
+---
 
-Functions Included:
+## 🎯 Aim
 
-🌐 Open Specific URL
+Create an Android application that demonstrates **Implicit Intent** and **Explicit Intent** using Kotlin in Android Studio.
 
-📞 Make Call to Specific Number
+---
 
-📋 Open Call Log
+# 📲 Application Demo
 
-🖼️ Open Gallery
+### Features Demonstrated
 
-📷 Open Camera
+| Intent Feature | Description |
+|----------------|-------------|
+| 🌐 Open Website | Opens a specific URL in the browser. |
+| 📞 Make Call | Opens the phone dialer with a phone number. |
+| 📋 Call Log | Opens the device call history. |
+| 🖼️ Gallery | Opens the image gallery. |
+| 📷 Camera | Launches the device camera. |
+| ⏰ Set Alarm | Creates a new alarm with time and message. |
+| 🔐 Login Activity | Navigates to Login Activity using Explicit Intent. |
 
-⏰ Set Alarm
+### 🎥 Screen Recording
 
-🔐 Open Login Activity (Explicit Intent)
+> Add your screen recording after uploading it to GitHub.
 
-Add your screen recording here after uploading it to GitHub.
-
+```text
 https://github.com/hellyv102-sys/Practical-3/blob/main/ScreenRecording.mp4
-📝 Steps
+```
 
-Web Browser – Opens a website using an implicit intent.
+---
 
-Phone Call – Opens the dialer with a predefined phone number.
+# 📝 Implementation Steps
 
-Call Log – Opens the device call history.
+| Step | Operation |
+|------|-----------|
+| **1** | Open a website using an Implicit Intent. |
+| **2** | Open the phone dialer with a specific number. |
+| **3** | Open the Call Log application. |
+| **4** | Open the Gallery to select an image. |
+| **5** | Launch the Camera application. |
+| **6** | Set an Alarm with predefined time and label. |
+| **7** | Navigate to Login Activity using Explicit Intent. |
 
-Gallery – Opens the phone gallery to select an image.
+---
 
-Camera – Launches the device camera application.
+# ⚙️ Application Logic
 
-Set Alarm – Opens the alarm app and creates an alarm.
+## 🔹 Implicit Intent
 
-Login Navigation – Opens LoginActivity using an explicit intent.
+Implicit Intent is used to perform actions using other applications available on the Android device.
 
-Application Logic
-1. Implicit Intent
+### 🌐 Open Website
 
-Implicit Intent requests another application on the device to perform an action.
-
-🌐 Open Website
+```kotlin
 val intent = Intent(Intent.ACTION_VIEW)
 intent.data = Uri.parse("https://www.google.com")
 startActivity(intent)
+```
 
-Explanation
+**Purpose:** Opens Google in the default web browser.
 
-ACTION_VIEW opens the URL in the default browser.
+---
 
-Uri.parse() converts the website link into a URI.
+### 📞 Make Phone Call
 
-📞 Make Phone Call
+```kotlin
 val intent = Intent(Intent.ACTION_DIAL)
 intent.data = Uri.parse("tel:9876543210")
 startActivity(intent)
+```
 
-Explanation
+**Purpose:** Opens the dialer with the given phone number.
 
-ACTION_DIAL opens the phone dialer.
+---
 
-tel: is used to pass the phone number.
+### 📋 Open Call Log
 
-📋 Open Call Log
+```kotlin
 val intent = Intent(Intent.ACTION_VIEW)
 intent.type = CallLog.Calls.CONTENT_TYPE
 startActivity(intent)
+```
 
-Explanation
+**Purpose:** Opens the device Call Log.
 
-Opens the device call log using CallLog.Calls.CONTENT_TYPE.
+---
 
-🖼️ Open Gallery
+### 🖼️ Open Gallery
+
+```kotlin
 val intent = Intent(Intent.ACTION_PICK)
 intent.type = "image/*"
 startActivity(intent)
+```
 
-Explanation
+**Purpose:** Opens the Gallery for selecting an image.
 
-ACTION_PICK opens the gallery.
+---
 
-"image/*" allows selecting image files.
+### 📷 Open Camera
 
-📷 Open Camera
+```kotlin
 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 startActivity(intent)
+```
 
-Explanation
+**Purpose:** Opens the Camera application.
 
-Opens the camera application to capture a photo.
+---
 
-⏰ Set Alarm
+### ⏰ Set Alarm
+
+```kotlin
 val intent = Intent(AlarmClock.ACTION_SET_ALARM)
 intent.putExtra(AlarmClock.EXTRA_HOUR, 7)
 intent.putExtra(AlarmClock.EXTRA_MINUTES, 30)
 intent.putExtra(AlarmClock.EXTRA_MESSAGE, "Wake Up")
 startActivity(intent)
+```
 
-Explanation
+**Purpose:** Creates an alarm at **7:30 AM** with the label **Wake Up**.
 
-Creates an alarm at 7:30 AM.
+---
 
-EXTRA_MESSAGE sets the alarm label.
+## 🔹 Explicit Intent
 
-2. Explicit Intent
+Explicit Intent is used to open another Activity inside the same application.
 
-Explicit Intent opens a specific activity inside the same application.
+### 🔐 Open Login Activity
 
-🔐 Open Login Activity
+```kotlin
 val intent = Intent(this, LoginActivity::class.java)
 startActivity(intent)
+```
 
-Explanation
+**Purpose:** Navigates from `MainActivity` to `LoginActivity`.
 
-Opens LoginActivity.
+---
 
-Used for navigation between activities in the app.
+# 🎨 User Interface (UI)
 
-UI Details
-Main Activity (activity_main.xml)
+## 🏠 Main Activity (`activity_main.xml`)
 
-The home screen is created using ConstraintLayout.
+The home screen is designed using **ConstraintLayout**.
 
-Components Used
+### Components Used
 
-EditText for URL input.
+- EditText for Website URL.
+- EditText for Phone Number.
+- Seven Buttons for different Intent operations.
 
-EditText for Phone Number input.
+### Buttons Available
 
-Buttons for:
+- 🌐 Open Website
+- 📞 Make Call
+- 📋 Call Log
+- 🖼️ Gallery
+- 📷 Camera
+- ⏰ Set Alarm
+- 🔐 Login Activity
 
-Open Website
+---
 
-Make Call
+## 🔑 Login Activity (`activity_login.xml`)
 
-Open Call Log
+A simple login screen created using **Explicit Intent**.
 
-Open Gallery
+### Components Used
 
-Open Camera
+- University Logo (`ImageView`)
+- `MaterialCardView`
+- Email `EditText`
+- Password `EditText`
+- Login Button
+- Forgot Password TextView
 
-Set Alarm
+---
 
-Login Activity
+# 🔒 Android Permissions
 
-Layout Features
+Add the following permissions inside **AndroidManifest.xml**.
 
-ConstraintLayout for responsive UI.
-
-Proper spacing and alignment for all buttons.
-
-Easy-to-use interface.
-
-Login Activity (activity_login.xml)
-
-The login screen is opened using an Explicit Intent.
-
-Components Used
-
-ImageView for University Logo.
-
-MaterialCardView for login form.
-
-EditText for Email.
-
-EditText for Password.
-
-Button for Login.
-
-TextView for Forgot Password.
-
-Layout Features
-
-Clean login interface.
-
-Rounded CardView design.
-
-Centered logo and login form.
-
-Android Permissions Used
-
-Add these permissions in AndroidManifest.xml.
-
+```xml
 <uses-permission android:name="android.permission.CALL_PHONE"/>
 <uses-permission android:name="android.permission.CAMERA"/>
+```
 
-These permissions allow the application to access phone calling and camera features. 
+These permissions allow the application to access phone calling and camera features.
+
+---
+
+# 📸 Output Screenshots
+
+| Screen | Screenshot |
+|--------|------------|
+| 🏠 Home Screen | `Screenshots/home.png` |
+| 🌐 Website | `Screenshots/website.png` |
+| 📞 Phone Call | `Screenshots/call.png` |
+| 📋 Call Log | `Screenshots/calllog.png` |
+| 🖼️ Gallery | `Screenshots/gallery.png` |
+| 📷 Camera | `Screenshots/camera.png` |
+| ⏰ Set Alarm | `Screenshots/alarm.png` |
+| 🔐 Login Activity | `Screenshots/login.png` |
+
+---
+
+# 📂 Project Structure
+
+```text
+Practical-3/
+│── app/
+│── java/
+│   ├── MainActivity.kt
+│   └── LoginActivity.kt
+│── res/
+│   ├── layout/
+│   │   ├── activity_main.xml
+│   │   └── activity_login.xml
+│   ├── drawable/
+│   └── mipmap/
+│── AndroidManifest.xml
+│── Screenshots/
+│── README.md
+```
+
+---
+
+# 🛠️ Tools & Technology
+
+| Software | Technology |
+|----------|------------|
+| Android Studio | Kotlin |
+| XML | ConstraintLayout |
+| Android SDK | Intents |
+
+---
+
+# ✅ Result
+
+The Android application was successfully developed to demonstrate both **Implicit Intent** and **Explicit Intent** in Android using Kotlin. The application successfully performs website browsing, phone calling, opening call logs, gallery, camera, alarm setting, and navigation to the Login Activity.
